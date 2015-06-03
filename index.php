@@ -76,17 +76,17 @@
 			// write to log
 
 			// check directory is here
-			if(!file_exists("/var/log/azi/")) {
-				mkdir("/var/log/azi/", 0700);
-				if(!file_exists("/var/log/azi/")) {
-					error_log("Human intervention required. Unable to create /var/log/azi (need rw from www-data)");
+			if(!file_exists(LOGDIR)) {
+				mkdir(LOGDIR, 0700);
+				if(!file_exists(LOGDIR)) {
+					error_log("Human intervention required. Unable to create " . LOGDIR . " (need rw from www-data)");
 				}
 			}
 
 			// write to day log file
 			$date_human_readable = date('Y-m-d H:i:s');
 			$date_filename = date('Ymd');
-			@error_log("[" . $date_human_readable . "] " . $_SERVER["REMOTE_ADDR"] . " from: " . $link . " to: " . $response->data->link . "\n", 3, "/var/log/azi/log_" . $date_filename);
+			@error_log("[" . $date_human_readable . "] " . $_SERVER["REMOTE_ADDR"] . " from: " . $link . " to: " . $response->data->link . "\n", 3, LOGDIR . "log_" . $date_filename);
 
 			return $response->data->link;
 		} else {
