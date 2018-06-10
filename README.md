@@ -1,7 +1,7 @@
 Azizut-public
 ======
 
-Simple public page for shorten link with Azizut (https://github.com/alexalouit/azizut).
+Simple public page for shorten link with Azizut (https://git.alex.alouit.fr/cgi-bin/public/gitweb.cgi?p=azizut/.git;a=summary).
 
 
 

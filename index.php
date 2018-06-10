@@ -118,7 +118,7 @@
 					<div class="masthead clearfix">
 						<div class="inner">
 							<h4 class="style-heading"><a href="/">azizut</a></h4>
-							<p class="lead">Raccourcisseur gratuit et <a href="https://github.com/alexalouit/azizut" target="_blank">OpenSource</a></p>
+							<p class="lead">Raccourcisseur gratuit et <a href="https://git.alex.alouit.fr/cgi-bin/public/gitweb.cgi?p=azizut/.git;a=summary" target="_blank">OpenSource</a></p>
 						</div>
 					</div>
 
@@ -158,7 +158,6 @@
 					<div class="mastfoot">
 						<div class="inner">
 							<p><small>Con&ccedil;u pour <a href="http://www.zut.io/" target="_blank">zut.io</a> par <a href="https://twitter.com/alexalouit" target="_blank">@alexalouit</a></small></p>
-							<p><small><a href="https://twitter.com/azi_zut" target="_blank">@azi_zut</a></small></p>
 						</div>
 					</div>
 
