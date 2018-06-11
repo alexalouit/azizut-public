@@ -15,7 +15,7 @@
 		} else {
 			$rawlink = substr($_SERVER["REQUEST_URI"], 6);
 			if(!empty($rawlink)) {
-				// it's a bookmarlet call, generate link in this page.
+				// it's a bookmarklet call, generate link in this page.
 				$trigger = addslashes($rawlink);
 			}
 		}
@@ -25,6 +25,11 @@
 		if(!function_exists('json_decode')) {
 			die("PECL json required.");
 		}
+
+		if (strpos($link, $_SERVER['HTTP_HOST']) !== false) {
+			return false;
+		}
+
 
 		// prepare call
 		$data = new \stdClass;
